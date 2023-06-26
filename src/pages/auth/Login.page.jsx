@@ -1,5 +1,5 @@
 
-import { FaGoogle, FaFacebook, FaApple, FaMicrosoft } from 'react-icons/fa';
+import { FaGoogle,  FaMicrosoft } from 'react-icons/fa';
 
 const LoginPage = () => {
   const handleLogin = (provider) => {
@@ -18,20 +18,7 @@ const LoginPage = () => {
           <FaGoogle className="mr-2" />
           Login with Google
         </button>
-        <button
-          onClick={() => handleLogin('Facebook')}
-          className="flex items-center justify-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none min-w-[50%] "
-        >
-          <FaFacebook className="mr-2" />
-          Login with Facebook
-        </button>
-        <button
-          onClick={() => handleLogin('Apple')}
-          className="flex items-center justify-center px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 focus:outline-none min-w-[50%] "
-        >
-          <FaApple className="mr-2" />
-          Login with Apple
-        </button>
+       
         <button
           onClick={() => handleLogin('Microsoft')}
           className="flex items-center justify-center px-4 py-2 bg-blue-700 text-white rounded-md hover:bg-blue-800 focus:outline-none min-w-[50%] "

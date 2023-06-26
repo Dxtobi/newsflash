@@ -13,7 +13,7 @@ function Welcome() {
     window.location.href='/auth';
   };
     return (
-        <div className="min-h-[80svh] relative p-3 capitalize">
+        <div className="min-h-[80vh] relative p-3 capitalize">
             <div className='absolute bottom-2 grid gap-4'>
                 <Link to={'/feed'} className='text-gray-600 text-lg'>get started</Link>
                 <div className='font-extrabold text-2xl flex flex-col gap-3'>
