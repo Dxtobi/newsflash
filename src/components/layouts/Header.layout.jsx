@@ -26,7 +26,7 @@ function LogedInHeader({ toggleSidebar}) {
     <div className="w-full flex bg-transparent p-4 items-center justify-between px-3 md:px-10 fixed left-0 top-0   bg-glass z-50">
       
       <div className="flex gap-[3rem] items-center w-full justify-between ">
-        <a href="/feed" className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800 flex bn"><MdBolt color="Green" size={30} />NF</a>
+        <Link href="/feed" className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-800 flex bn"><MdBolt color="Green" size={30} />NF</Link>
         <div className="flex gap-10 items-center">
           {
             logedInLinksArray.map((link, i) => (

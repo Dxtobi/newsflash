@@ -36,7 +36,7 @@ function App() {
             <Route exact path='/auth' element={<LoginPage />} />
             <Route exact path='/feed' element={<Home />} />
             <Route exact path='/post/:id' element={<Post />} />
-            <Route exact path='*' element={<Home />} />
+            <Route  path='*' element={<Home />} />
 
           </Routes>
 

@@ -6,6 +6,7 @@ import {
 } from 'framer-motion';
 import Search from '../../components/common/Search';
 import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const gnImg = ['/IMG_3132.JPG', '/IMG_3130.JPG', '/earthmap.png', '/sit.png', '/IMG_3134.JPG']
 
@@ -64,10 +65,11 @@ function Home() {
 
                 {
                     gnImg.map((e, i) => (
-                        <motion.a href={`/post/${i}`}
+                        <motion.div 
                             initial={{ scale: 0, }}
                             whileInView={{ scale: 1, }}
                             className='w-full rounded-2xl shadow-my' key={i + e}>
+                            <Link to={`/post/${i}`}>
                             <div className='relative w-full rounded-2xl   h-[350px]'>
                                 <div className='bg-gray-400 object-contain w-full h-full rounded-t-2xl fixedBg' style={{ backgroundImage: `url(${e})`, backgroundPosition: 'top', }} />
                                 <div className='absolute bottom-0 gradient'>
@@ -78,6 +80,7 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
+                            </Link>
                             <div className='flex gap-2 items-center  pt-5 bg-white px-3 pb-2 rounded-b-2xl'>
                                 <img src='/IMG_3132.JPG' className='rounded-full h-10 w-10 box-border' />
                                 <div>
@@ -85,7 +88,7 @@ function Home() {
                                     <div className='capitalize text-gray-500'>Jul 20, 22 comments 2min read</div>
                                 </div>
                             </div>
-                        </motion.a>
+                        </motion.div>
                     ))
                 }
 

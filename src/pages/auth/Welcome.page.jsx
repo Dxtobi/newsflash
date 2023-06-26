@@ -21,7 +21,7 @@ function Welcome() {
                     <div className="h-[3px] w-[40px] rounded-full bg-blue-600 shadow-2xl" />
                 </div>
                 <div className=''>
-                    <button href='/auth' className='rounded-full py-3 px-5 bg-gradient-to-r from-blue-500 to-blue-300 flex items-center text-white' >Signin - Signup</button>
+                    <Link to='/auth' className='rounded-full py-3 px-5 bg-gradient-to-r from-blue-500 to-blue-300 flex items-center text-white' >Signin - Signup</Link>
                 </div>
 
                 <div className="flex items-center gap-4 mt-5"><AiFillTwitterCircle size={50} color='#007cff'/><div>Say hi on twitter</div></div>
