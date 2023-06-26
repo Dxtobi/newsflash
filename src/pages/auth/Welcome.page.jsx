@@ -6,12 +6,6 @@ function Welcome() {
 
     //const history = useHistory();
 
-  const handleLogin = () => {
-    
-
-    // Redirect to the desired page after login
-    window.location.href='/auth';
-  };
     return (
         <div className="min-h-[80vh] relative p-3 capitalize">
             <div className='absolute bottom-2 grid gap-4'>
@@ -27,7 +21,7 @@ function Welcome() {
                     <div className="h-[3px] w-[40px] rounded-full bg-blue-600 shadow-2xl" />
                 </div>
                 <div className=''>
-                    <button className='rounded-full py-3 px-5 bg-gradient-to-r from-blue-500 to-blue-300 flex items-center text-white' onClick={handleLogin}>Signin - Signup</button>
+                    <button href='/auth' className='rounded-full py-3 px-5 bg-gradient-to-r from-blue-500 to-blue-300 flex items-center text-white' >Signin - Signup</button>
                 </div>
 
                 <div className="flex items-center gap-4 mt-5"><AiFillTwitterCircle size={50} color='#007cff'/><div>Say hi on twitter</div></div>

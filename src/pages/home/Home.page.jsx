@@ -32,7 +32,7 @@ function Home() {
     return (
         <div className=" gap-4 px-2 md:px-20 py-10 items-center  w-[95%] md:w-[85%] m-auto " ref={myRef}>
             <div className="w-full flex flex-col items-start gap-6 text-center">
-                <div className='text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-300 flex items-center'>Newz <MdBolt color="Green" size={30} />Flash</div>
+                <div className='text-3xl font-extrabold text-[#00000056] bg-clip-text bg-gradient-to-r from-blue-500 to-blue-300 flex items-center'>Newz <MdBolt color="Green" size={30} />Flash</div>
                 <div className='capitalize text-gray-600 my-1'>
                     just another tech news website.
                 </div>
