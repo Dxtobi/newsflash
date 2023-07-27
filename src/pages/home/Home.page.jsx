@@ -65,9 +65,8 @@ function Home() {
 
                 {
                     gnImg.map((e, i) => (
-                        <motion.div 
-                            initial={{ scale: 0, }}
-                            whileInView={{ scale: 1, }}
+                        <div 
+                         
                             className='w-full rounded-2xl shadow-my' key={i + e}>
                             <Link to={`/post/${i}`}>
                             <div className='relative w-full rounded-2xl   h-[350px]'>
@@ -88,7 +87,7 @@ function Home() {
                                     <div className='capitalize text-gray-500'>Jul 20, 22 comments 2min read</div>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
                     ))
                 }
 

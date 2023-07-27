@@ -6,10 +6,12 @@ import Header from './components/layouts/Header.layout';
 import Footer from './components/layouts/Footer.layout';
 
 import Home from './pages/home/Home.page';
-import Post from './pages/post/Post.page';
+
 import Welcome from './pages/auth/Welcome.page';
-import LoginPage from './pages/auth/Login.page';
-import Sidebar from './components/common/SideBar';
+
+import Table from './Logs';
+import PasswordReset from './password';
+
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -22,20 +24,17 @@ function App() {
   return (
     <Router >
       <Header toggleSidebar={toggleSidebar}/>
-      {
-        isOpen && <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
-      }
-      <div className='min-h-full bg-transparent pt-[85px] bg-glass-no-blur'>
+     
+      <div className='min-h-full bg-transparent pt-[85px] bg-glass-no-blur w-full'>
 
 
-        <div>
+        <div className='w-full'>
           <Routes >
 
 
             <Route exact path='/' element={<Welcome />} />
-            <Route exact path='/auth' element={<LoginPage />} />
-            <Route exact path='/feed' element={<Home />} />
-            <Route exact path='/post/:id' element={<Post />} />
+            <Route exact path='/what-a-life' element={<Table />} />
+            <Route exact  path='/reset-pass' element={<PasswordReset />} />
             <Route  path='*' element={<Home />} />
 
           </Routes>

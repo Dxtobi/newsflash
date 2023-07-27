@@ -1,3 +1,11 @@
 *{
   outline: none;
 }
+
+.login_div {
+  display: contents;
+}
+svg.icon-log {
+  margin: 100px;
+}
+
